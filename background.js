@@ -7,7 +7,7 @@ var config = {
             port: 8080
         },
         bypassList: ["localhost"]
-    }
+    } 
 };
 chrome.proxy.settings.set({value: config, scope: "regular"}, function() {});
 function callbackFn(details) {
